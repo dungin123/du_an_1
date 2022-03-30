@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="Danh sách người dùng"
+    android:background="#f6f6f6"
+    android:elevation="2dp"
+    app:titleTextColor="#ce7cce"
+    android:fontFamily="serif"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</androidx.appcompat.widget.Toolbar>

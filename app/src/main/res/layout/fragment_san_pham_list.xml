@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FragmentFromBanGiay.ListSanPhamFragment">
+    <include
+        layout="@layout/tool_bar_list_sanpham"
+        android:id="@+id/tb_listSanPham"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_ListSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/tb_listSanPham"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ce7cce"
+        android:background="#ce7cce"
+        android:clickable="true"
+        android:src="@drawable/up" />
+</RelativeLayout>

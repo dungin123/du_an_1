@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentFromBanGiay.ThongBaoFragment">
+
+    <include
+        android:id="@+id/tb_thongBao"
+        layout="@layout/tool_bar_thong_bao" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_thongBao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_thongBao"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

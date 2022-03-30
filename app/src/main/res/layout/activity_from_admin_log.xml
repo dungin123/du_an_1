@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FromDangNhap.FromAdminLog">
+
+    <include
+        android:id="@+id/tb_admin_log"
+        layout="@layout/tool_bar_admin_log" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="86dp"
+        android:text="TÊN ĐANG NHẬP"
+        android:textColor="#ce7cce"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_admin_log"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <EditText
+        android:id="@+id/ed_tenDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#939393"
+        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+        android:drawableLeft="@drawable/ic_baseline_supervised_user_circle_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter tên đang nhập"
+        android:inputType="textPersonName"
+        android:textColor="#939393"
+        android:textColorHint="#939393"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="MẬT KHẨU"
+        android:textColor="#ce7cce"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_tenDangNhap"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/ed_passWord"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#939393"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="#939393"
+        android:textColorHint="#939393"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_rsPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="serif"
+        android:text="Quên mật khẩu ?"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_passWord"
+        tools:ignore="RtlCompat" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_DangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/custom_button_from_dang_nhap"
+        android:fontFamily="serif"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rsPassword"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progressBar_dnAdmin"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+        app:SpinKit_Color="#ce7cce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

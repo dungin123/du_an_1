@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/search_view"
+        android:icon="@drawable/icons8search24"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/filter_view"
+        android:icon="@drawable/icons8slider24"
+        android:title="Filter"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+</menu>
